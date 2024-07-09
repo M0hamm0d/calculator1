@@ -8,28 +8,29 @@
 </head>
 <body>
     <div class="container"> 
-        <input type="text">
+        <input type="text" id="input" placeholder="0">
         <div class="the-keys">
-            <button class="operator-ash">AC</button>
+            <button class="operator-ash" onclick="clearButton()">AC</button>
             <button class="operator-ash">+/-</button>
-            <button class="operator-ash">%</button>
-            <button class="operator">/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">x</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">+</button>
-            <button class="span">0</button>
-            <button>.</button>
-            <button class="operator">=</button>
+            <button class="operator-ash" onclick="displayOnScreen('%')">%</button>
+            <button class="operator" onclick="displayOnScreen('/')">/</button>
+            <button onclick="displayOnScreen('7')">7</button>
+            <button onclick="displayOnScreen('8')">8</button>
+            <button onclick="displayOnScreen('9')">9</button>
+            <button class="operator" onclick="displayOnScreen('*')">x</button>
+            <button onclick="displayOnScreen('4')">4</button>
+            <button onclick="displayOnScreen('5')">5</button>
+            <button onclick="displayOnScreen('6')">6</button>
+            <button class="operator" onclick="displayOnScreen('-')">-</button>
+            <button onclick="displayOnScreen('1')">1</button>
+            <button onclick="displayOnScreen('2')">2</button>
+            <button onclick="displayOnScreen('3')">3</button>
+            <button class="operator" onclick="displayOnScreen('+')">+</button>
+            <button class="span" onclick="displayOnScreen('0')">0</button>
+            <button onclick="displayOnScreen('.')">.</button>
+            <button class="operator" onclick="calculate()">=</button>
         </div>
     </div>
+    <script src="asset/js/index.js"></script>
 </body>
 </html>
