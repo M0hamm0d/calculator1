@@ -10,6 +10,27 @@
     <div class="container"> 
         <input type="text" id="input" placeholder="0">
         <div class="the-keys">
+            <button class="operator-ash" onclick="clearDisplay()">AC</button>
+            <button class="operator-ash">+/-</button>
+            <button class="operator-ash" onclick="displayOnScreen('%')">%</button>
+            <button class="operator" onclick="getOperator('/')">/</button>
+            <button onclick="getNumber('7')">7</button>
+            <button onclick="getNumber('8')">8</button>
+            <button onclick="getNumber('9')">9</button>
+            <button class="operator" onclick="getOperator('*')">x</button>
+            <button onclick="getNumber('4')">4</button>
+            <button onclick="getNumber('5')">5</button>
+            <button onclick="getNumber('6')">6</button>
+            <button class="operator" onclick="getOperator('-')">-</button>
+            <button onclick="getNumber('1')">1</button>
+            <button onclick="getNumber('2')">2</button>
+            <button onclick="getNumber('3')">3</button>
+            <button class="operator" onclick="getOperator('+')">+</button>
+            <button class="span" onclick="getNumber('0')">0</button>
+            <button onclick="getNumber('.')">.</button>
+            <button class="operator" onclick="sum()">=</button>
+        </div>
+        <!-- <div class="the-keys">
             <button class="operator-ash" onclick="clearButton()">AC</button>
             <button class="operator-ash">+/-</button>
             <button class="operator-ash" onclick="displayOnScreen('%')">%</button>
@@ -28,8 +49,8 @@
             <button class="operator" onclick="displayOnScreen('+')">+</button>
             <button class="span" onclick="displayOnScreen('0')">0</button>
             <button onclick="displayOnScreen('.')">.</button>
-            <button class="operator" onclick="calculate()">=</button>
-        </div>
+            <button class="operator" onclick="calc()">=</button>
+        </div> -->
     </div>
     <script src="asset/js/index.js"></script>
 </body>
